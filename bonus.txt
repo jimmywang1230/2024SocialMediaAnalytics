@@ -1,0 +1,59 @@
+class Node<T>(var value: T, var next: Node<T>? = null)
+
+class SinglyLinkedList<T> {
+    var head: Node<T>? = null
+
+    fun add(value: T) {
+        if (head == null) {
+            head = Node(value)
+        } else {
+            var current = head
+            while (current!!.next != null) {
+                current = current.next
+            }
+            current.next = Node(value)
+        }
+    }
+}
+
+private fun findSpecialNodes(list: SinglyLinkedList<Char>): List<Node<Char>?> {
+    var slow: Node<Char>? = list.head
+    var fast: Node<Char>? = list.head
+    var threeFourths: Node<Char>? = null
+    var step = 0
+
+    while (fast?.next != null) {
+        fast = fast.next?.next
+        slow = slow?.next
+
+        if (step >= 2) { // 當slow node移動兩步後開始移動 threeFourths
+            if (threeFourths == null) {
+                threeFourths = list.head
+            } else {
+                threeFourths = threeFourths.next
+            }
+        }
+
+        step++
+    }
+
+    // 從開始時調整 threeFourths 指針，每慢指針兩步移動 threeFourths 一次
+    if (step > 2) {
+        while (threeFourths != null && threeFourths.next != null && threeFourths.next!!.next != null) {
+            threeFourths = threeFourths.next!!.next
+        }
+    }
+
+    return listOf(slow, threeFourths)
+}
+
+
+
+fun main() {
+    val list = SinglyLinkedList<Char>()
+    "abcdefghijk".forEach { list.add(it) }
+
+    val (middle, threeFourths) = findSpecialNodes(list)
+    println("Middle node: ${middle?.value}")
+    println("Three-fourths node: ${threeFourths?.value}")
+}
