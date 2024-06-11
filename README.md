@@ -52,11 +52,11 @@ M11207509 王佑強: Dataset + Community Detection
     
     總共有115個nodes, 490個links
     
-    ![截圖 2024-06-11 下午4.52.18.png](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/%25E6%2588%25AA%25E5%259C%2596_2024-06-11_%25E4%25B8%258B%25E5%258D%25884.52.18.png)
+    ![截圖 2024-06-11 下午4.52.18.png](Readme_img/%25E6%2588%25AA%25E5%259C%2596_2024-06-11_%25E4%25B8%258B%25E5%258D%25884.52.18.png)
     
     ### **Nodes group distribution**
     
-    ![Untitled](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/Untitled.png)
+    ![Untitled](Readme_img/Untitled.png)
     
 
 ## Purpose
@@ -81,7 +81,7 @@ M11207509 王佑強: Dataset + Community Detection
 - **優點**：在資料流或活動明顯的網絡中較有效。
 - (a)random walk; (b)根據random walk的機率直接建構huffman編碼; (c)層次編碼; (d)層次編碼中的類別編碼。最下方顯示了對應的編碼序列，可以看到層次編碼的編碼序列更短
     
-    ![Untitled](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/Untitled%201.png)
+    ![Untitled](Readme_img/Untitled%201.png)
     
 
 ### Louvain
@@ -281,9 +281,9 @@ M11207509 王佑強: Dataset + Community Detection
 
 Communities found: Infomap→7, Louvian→14。
 
-![截圖 2024-06-10 下午3.31.16.png](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/%25E6%2588%25AA%25E5%259C%2596_2024-06-10_%25E4%25B8%258B%25E5%258D%25883.31.16.png)
+![截圖 2024-06-10 下午3.31.16.png](Readme_img/%25E6%2588%25AA%25E5%259C%2596_2024-06-10_%25E4%25B8%258B%25E5%258D%25883.31.16.png)
 
-![Untitled](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/Untitled%202.png)
+![Untitled](Readme_img/Untitled%202.png)
 
 ---
 
@@ -393,7 +393,7 @@ Communities found: Infomap→7, Louvian→14。
 
 本次分析中，社群幫助識別在技術標籤之間的主要關聯和技術領域的分佈。
 
-![Untitled](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/Untitled%203.png)
+![Untitled](Readme_img/Untitled%203.png)
 
 ### Link Prediction
 
@@ -495,7 +495,7 @@ Communities found: Infomap→7, Louvian→14。
 
 資源分配指數是一種基於資源分配的概念來預測鏈結的方法。它的基本思想是，如果兩個節點之間有共同的鄰居，那麼它們之間形成連接的可能性會更高，該指數計算它們的共通鄰居數，並考慮共通鄰居的度數。具體計算方式是：
 
-![Untitled](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/Untitled%204.png)
+![Untitled](Readme_img/Untitled%204.png)
 
 **分數意義**：
 
@@ -504,7 +504,7 @@ Communities found: Infomap→7, Louvian→14。
 
 **結果示例**
 
-![Untitled](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/Untitled%205.png)
+![Untitled](Readme_img/Untitled%205.png)
 
 - **解釋**：這些預測值表示在網絡中具有較高共通鄰居數的節點對，例如，`asp.net-web-api` 和 `.net` 之間的連接可能性很高。這些節點對的共通鄰居可能提供了強有力的支持，說明這些技術可能在開發者社區中有緊密的互動和關聯。分數為0.7095，表明它們有多個共同鄰居且這些鄰居的連接數較少。
 
@@ -514,7 +514,7 @@ Communities found: Infomap→7, Louvian→14。
 
 賈卡德係數是一種衡量兩個集合相似度的方法。在鏈結預測中，它被用來衡量兩個節點的鄰居集合之間的相似度。具體計算方式是：
 
-![Untitled](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/Untitled%206.png)
+![Untitled](Readme_img/Untitled%206.png)
 
 **分數意義**：
 
@@ -523,7 +523,7 @@ Communities found: Infomap→7, Louvian→14。
 
 **結果示例**
 
-![Untitled](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/Untitled%207.png)
+![Untitled](Readme_img/Untitled%207.png)
 
 - **解釋**：最高分數（1.0000）的節點對顯示了完全相同的鄰居集合，這表明這些技術通常一起使用。例如，`visual-studio` 和 `unity3d` 經常一起出現在開發環境中，這對於預測這些技術之間可能的合作關係非常有用。
 
@@ -531,7 +531,7 @@ Communities found: Infomap→7, Louvian→14。
 
 Adamic-Adar 指數考慮到共同鄰居數量的同時，也考慮了共同鄰居的稀有性。具體計算方式是：
 
-![Untitled](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/Untitled%208.png)
+![Untitled](Readme_img/Untitled%208.png)
 
 **分數意義**：
 
@@ -540,7 +540,7 @@ Adamic-Adar 指數考慮到共同鄰居數量的同時，也考慮了共同鄰�
 
 **結果示例**
 
-![Untitled](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/Untitled%209.png)
+![Untitled](Readme_img/Untitled%209.png)
 
 - **解釋**：高分數的節點對如 `asp.net-web-api` 和 `.net` 顯示了它們有多個共通鄰居，這些鄰居的稀有性增加了它們之間形成連接的可能性。這些結果指出了在開發者社區中，某些技術組合的罕見但強大的合作關係。
 
@@ -552,7 +552,7 @@ Preferential Attachment 是指新加入的節點更傾向於連接到已經具�
 
 優先連接機制表明，某個節點 被選中作為新連接的概率，與該節點的度 k 成正比，偏好連接是基於節點度的乘積來進行預測的方法
 
-![Untitled](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/Untitled%2010.png)
+![Untitled](Readme_img/Untitled%2010.png)
 
 ### 意義
 
@@ -561,7 +561,7 @@ Preferential Attachment 是指新加入的節點更傾向於連接到已經具�
 
 **結果示例**
 
-![Untitled](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/Untitled%2011.png)
+![Untitled](Readme_img/Untitled%2011.png)
 
 - **解釋**：這些高分數預測表明，度數大的節點對如 `c#` 和 `jquery` 更有可能形成新連接。這意味著這些技術在開發者社區中非常受歡迎，並且在未來可能會有更多的交互和合作。
 
@@ -704,7 +704,7 @@ print(f"ROC AUC: {roc_auc:.4f}")
 
 **結果示例**
 
-![Untitled](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/Untitled%2012.png)
+![Untitled](Readme_img/Untitled%2012.png)
 
 此期末專案進行二分類問題的模型評估用的指標有準確率（Accuracy）、精確率（Precision）、召回率（Recall）、F1值（F1 Score）和ROC AUC值。
 
@@ -712,7 +712,7 @@ print(f"ROC AUC: {roc_auc:.4f}")
 
 **公式**: 
 
-![Untitled](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/Untitled%2013.png)
+![Untitled](Readme_img/Untitled%2013.png)
 
 - **TP**（True Positive）：真陽性，即正樣本被正確預測為正樣本的數量
 - **TN**（True Negative）：真陰性，即負樣本被正確預測為負樣本的數量
@@ -725,7 +725,7 @@ print(f"ROC AUC: {roc_auc:.4f}")
 
 **公式**: 
 
-![Untitled](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/Untitled%2014.png)
+![Untitled](Readme_img/Untitled%2014.png)
 
 **解釋**：精確率表示被預測為正樣本的樣本中，實際為正樣本的比例。我的精確率為0.9157，表示被預測為正樣本的樣本中，91.57%是真正的正樣本。
 
@@ -733,7 +733,7 @@ print(f"ROC AUC: {roc_auc:.4f}")
 
 **公式**: 
 
-![Untitled](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/Untitled%2015.png)
+![Untitled](Readme_img/Untitled%2015.png)
 
 **解釋**：召回率表示所有實際正樣本中，被正確預測為正樣本的比例。我的召回率為1.0000，表示所有的正樣本都被正確預測出來了，沒有遺漏。
 
@@ -741,7 +741,7 @@ print(f"ROC AUC: {roc_auc:.4f}")
 
 **公式**: 
 
-![Untitled](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/Untitled%2016.png)
+![Untitled](Readme_img/Untitled%2016.png)
 
 **解釋**：F1值是精確率和召回率的調和平均數，兼顧兩者的平衡。我的F1值為0.9560，表示模型在精確率和召回率之間取得了良好的平衡。
 
@@ -787,19 +787,19 @@ print(f"ROC AUC: {roc_auc:.4f}")
 | 4 | asp.net | 0.2281 |
 | 5 | angularjs | 0.2281 |
 
-![bar_chart.png](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/bar_chart.png)
+![bar_chart.png](Readme_img/bar_chart.png)
 
 而各中心節點的子網路圖如下：
 
-![jquery_graph.png](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/jquery_graph.png)
+![jquery_graph.png](Readme_img/jquery_graph.png)
 
-![c_sharp_graph.png](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/c_sharp_graph.png)
+![c_sharp_graph.png](Readme_img/c_sharp_graph.png)
 
-![css_graph.png](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/css_graph.png)
+![css_graph.png](Readme_img/css_graph.png)
 
-![angularjs_graph.png](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/angularjs_graph.png)
+![angularjs_graph.png](Readme_img/angularjs_graph.png)
 
-![asp.net_graph.png](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/asp.net_graph.png)
+![asp.net_graph.png](Readme_img/asp.net_graph.png)
 
 ### **接近中心性(Closeness Centrality)**
 
@@ -813,19 +813,19 @@ print(f"ROC AUC: {roc_auc:.4f}")
 | 4 | css | 0.2579 |
 | 5 | javascript | 0.2571 |
 
-![bar_chart.png](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/bar_chart%201.png)
+![bar_chart.png](Readme_img/bar_chart%201.png)
 
 而各中心節點的子網路圖如下：
 
-![jquery_graph.png](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/jquery_graph%201.png)
+![jquery_graph.png](Readme_img/jquery_graph%201.png)
 
-![ajax_graph.png](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/ajax_graph.png)
+![ajax_graph.png](Readme_img/ajax_graph.png)
 
-![javascript_graph.png](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/javascript_graph.png)
+![javascript_graph.png](Readme_img/javascript_graph.png)
 
-![mysql_graph.png](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/mysql_graph.png)
+![mysql_graph.png](Readme_img/mysql_graph.png)
 
-![css_graph.png](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/css_graph%201.png)
+![css_graph.png](Readme_img/css_graph%201.png)
 
 ### **間接中間性(Betweenness Centrality)**
 
@@ -839,19 +839,19 @@ print(f"ROC AUC: {roc_auc:.4f}")
 | 4 | asp.net | 0.1741 |
 | 5 | apache | 0.1309 |
 
-![bar_chart.png](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/bar_chart%202.png)
+![bar_chart.png](Readme_img/bar_chart%202.png)
 
 而各中心節點的子網路圖如下：
 
-![jquery_graph.png](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/jquery_graph%202.png)
+![jquery_graph.png](Readme_img/jquery_graph%202.png)
 
-![mysql_graph.png](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/mysql_graph%201.png)
+![mysql_graph.png](Readme_img/mysql_graph%201.png)
 
-![apache_graph.png](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/apache_graph.png)
+![apache_graph.png](Readme_img/apache_graph.png)
 
-![linux_graph.png](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/linux_graph.png)
+![linux_graph.png](Readme_img/linux_graph.png)
 
-![asp.net_graph.png](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/asp.net_graph%201.png)
+![asp.net_graph.png](Readme_img/asp.net_graph%201.png)
 
 ### **特徵向量中心性(Eigenvector Centrality)**
 
@@ -865,19 +865,19 @@ print(f"ROC AUC: {roc_auc:.4f}")
 | 4 | html5 | 0.2681 |
 | 5 | php | 0.2653 |
 
-![bar_chart.png](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/bar_chart%203.png)
+![bar_chart.png](Readme_img/bar_chart%203.png)
 
 而各中心節點的子網路圖如下：
 
-![jquery_graph.png](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/jquery_graph%203.png)
+![jquery_graph.png](Readme_img/jquery_graph%203.png)
 
-![javascript_graph.png](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/javascript_graph%201.png)
+![javascript_graph.png](Readme_img/javascript_graph%201.png)
 
-![php_graph.png](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/php_graph.png)
+![php_graph.png](Readme_img/php_graph.png)
 
-![css_graph.png](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/css_graph%202.png)
+![css_graph.png](Readme_img/css_graph%202.png)
 
-![html5_graph.png](Readme_img/Stack%20Overflow%20Tag%20Network%20Analysis%2036a2eef368dd4661b694676383f1fc3f/html5_graph.png)
+![html5_graph.png](Readme_img/html5_graph.png)
 
 ### 綜合比較
 
