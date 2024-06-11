@@ -52,8 +52,6 @@ M11207509 王佑強: Dataset + Community Detection
     
     總共有115個nodes, 490個links
     
-    ![截圖 2024-06-11 下午4.52.18.png](Readme_img/%25E6%2588%25AA%25E5%259C%2596_2024-06-11_%25E4%25B8%258B%25E5%258D%25884.52.18.png)
-    
     ### **Nodes group distribution**
     
     ![Untitled](Readme_img/Untitled.png)
